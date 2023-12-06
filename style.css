@@ -1,125 +1,116 @@
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header h1,a 
-,section h2{
-    font-family: 'Bungee', cursive;
-}
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
 /* MENU SUPERIOR */
-header{
-    padding: 16px 0;
-    background-color: #182c61;
-    color: #ecf0f1;
+.menu{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E52535;
+    color: white;
+    padding: 3vh 4vh 3vh 4vh;
 }
-header a{
-    color: #ecf0f1;
+.menu ul,li,a {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
     text-decoration: none;
+    color:white;
+    margin-left: 2vh;
 }
+/* CONTAINER PRIONCIPAL */
 
-
-header nav li{
-    display: inline;
-    margin-left: 16px;
-    font-size: 18px;
-}
-
-.container{
+/* SEÇÃO SOBRE */
+section .sobre{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto;
+}
+section .sobre img{
+    width:500px;
+    height: 300px;
+    border:0.7vh solid #E52535;
+    border-radius: 2vh;
+}
+section .sobre .text{
+    margin-left: 3vh;
+    margin-top: 3vh;
+    max-width: 500px;
+    min-width:500px;
+}
+section .sobre .text h2{
+    margin-bottom: 2vh;
+    font-family: 'Rubik', sans-serif;
 }
 
-header .container, section .container{
+/* SEÇÃO SHOWS */
+
+section .atracoes{
+    margin-top: 10vh;
+    padding: 3vh;
+    text-align: center;  
+    background-color: #FF293B;
+}
+section .atracoes h1{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+ 
+    font-size: x-large;
+    margin-bottom: 2vh;
+}
+
+/* RODAPÉ */
+section .footer{
+    background-color: #E52535;
+    color: white;
+    margin-top: 5vh;
+    padding: 7vh;
+}
+
+section .footer .contact-methods{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-width: 1280px;
+    width: 100%;
 }
-
-/* CORPO DO SITE */
-.brands-list img{
-    height: 24px;
+section .footer .contact-methods h3{
+    font-family: 'Rubik', sans-serif;
+    
+ 
+    margin-bottom: 2vh;
 }
-
-.brands-list li{
-    display: inline;
-    margin-right: 8px;
+/* css form */
+section .footer .contact-methods form input,textarea{
+    width: 30vh;
+    margin-bottom: 0.7vh;
+    padding: 0.5vh;
+    border: 0;
+    border-radius: 1vh;
 }
-
-section .container{
-    align-items: flex-start;
-}
-
-section{
-    padding: 24px 0;
-    color: #182C61;
-}
-section h2{
-    margin-bottom: 16px;
-}
-
-section p{
-    margin-bottom: 8px;
-}
-
-.store-front{
-    margin-right: 32px;
-}
-
-/* SEÇÃO CONTATO */
-#contact .container{
-    display: block;
-}
-
-.contact-methods{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* form */
-form input,
-form textarea,
-form button{
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
-
-form textarea{
-    resize: none;
-    height: 180px;
-}
-
-form button{
-    background-color: #182C61;
-    color: #ecf0f1;
-    border: none;
+section .footer .contact-methods form button{
+    width: 30vh;
+    padding: 1vh;
+    background-color: #BF1F2C;
+    color: white;
+    border: 0;
     cursor: pointer;
+    border-radius: 1vh;
+    transition: all 0.4s ease-in-out;
+
+}
+section .footer .contact-methods form button:hover{
+    background-color: #400A0F;
 }
 
-form button:hover{
-    background-color: #314e9e;
+section .footer .social-links {
+    display: flex;
 }
-
-input:focus, textarea:focus{
-    outline-color: #182C61;
-}
-
-/* seção nos acompanhe */
-.social-links img{
-    height: 24px;
-}
-.social-links li{
-    display: inline;
-    margin-right: 8px;
-}
-.social_links li a {
-    text-decoration: none;
+section .footer .social-links img{
+    max-height: 5vh;
+    min-height: 5vh;
 }
